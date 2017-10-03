@@ -2,6 +2,13 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.2.
 
+[NPM repository](https://www.npmjs.com/package/ng-tax-share-point-web-services-module)
+
+Usage: 
+import {NgTaxSharedModule} from '../NgTaxSharedModule/ng-tax-shared.module';
+
+then in your imports array of your main moduel: NgTaxServices.forRoot()
+
 It encapsulates some SharePoint ASMX web services.
 Tested against a SharePoint 2010.
 

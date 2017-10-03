@@ -5,7 +5,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 [NPM repository](https://www.npmjs.com/package/ng-tax-share-point-web-services-module)
 
 Usage: 
-import {NgTaxSharedModule} from '../NgTaxSharedModule/ng-tax-shared.module';
+import {NgTaxServices} from 'ng-tax-share-point-web-services-module';
 
 then in your imports array of your main moduel: NgTaxServices.forRoot()
 

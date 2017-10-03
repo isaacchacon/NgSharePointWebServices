@@ -2,6 +2,15 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.2.
 
+It encapsulates some SharePoint ASMX web services.
+Tested against a SharePoint 2010.
+
+This code is very raw / untested, please use with caution.
+
+Dependencies: Please add JQuery to the HTML of your project, i tested it as this:
+<script src="/SiteAssets/jquery-3.1.1.min.js"></script>
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.

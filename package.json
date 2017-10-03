@@ -1,7 +1,10 @@
 {
   "name": "ng-tax-share-point-web-services-module",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "license": "MIT",
+  "repository":{ "type" : "git"
+  , "url" : "https://github.com/isaacchacon/NgSharePointWebServices"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",

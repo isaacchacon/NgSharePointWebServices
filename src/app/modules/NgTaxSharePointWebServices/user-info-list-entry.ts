@@ -21,7 +21,7 @@ constructor(rawResponse?:any){
 		return '/';
 	}
 	getListName():string{
-		return 'User Information List';
+		return 'UserInfo';
 	}
 	getFieldToUpdate():string{
 		return 'Not implemented';

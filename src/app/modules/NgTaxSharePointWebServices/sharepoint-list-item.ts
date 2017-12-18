@@ -45,5 +45,14 @@ constructor(rawResponse?:any){
 				this[aString] = this[aString].split(".")[0];
 			}
 	}
+	
+	static buildRawResponseArray(id:number, keyValuePairs:[string, string][]):any[]{
+		let response: any[] = [];
+		response.push({name:"ows_id", value:id});
+		for(let keyValuePair of keyValuePairs){
+			response.push({name:"ows_"+keyValuePair[0].toLowerCase(), value:keyValuePair[1]});
+		}
+		return response;
+	}
 
 }

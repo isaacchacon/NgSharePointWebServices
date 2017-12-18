@@ -4,12 +4,7 @@ import {  ModuleWithProviders, NgModule, Optional, SkipSelf } from  '@angular/co
 import {SharepointListsWebService} from './sharepoint-lists-web.service';
 import {UrlService} from './url-service';
 import {SharePointUserProfileWebService} from './sharepoint-user-profile-web.service';
-
-//import {SharepointListItem} from './sharepoint-list-item';
-//import {SharepointListItemConstructor} from './sharepoint-list-item-constructor';
-//import {SharePointUserProfile} from './sharepoint-user-profile';
-//import {UserInfoListEntry} from './user-info-list-entry';
-
+import {SharepointUserGroupWebService} from './sharepoint-usergroup-web.service';
 
 
 @NgModule({
@@ -29,7 +24,7 @@ export class NgTaxServices {
   public static forRoot(): ModuleWithProviders {
 		return {
 		  ngModule: NgTaxServices,
-		  providers: [SharepointListsWebService,UrlService,SharePointUserProfileWebService]
+		  providers: [SharepointListsWebService,UrlService,SharePointUserProfileWebService,SharepointUserGroupWebService]
 		};
 	}
 }

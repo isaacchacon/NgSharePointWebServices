@@ -23,7 +23,9 @@ export class UrlService {
 	}catch(x){
 		return '';
 	}
-	
-	
+  }
+  
+  getCurrentSiteUrl():string{
+	return _spPageContextInfo.webServerRelativeUrl+"/";  
   }
 }

@@ -26,6 +26,34 @@ export class UrlService {
   }
   
   getCurrentSiteUrl():string{
-	return _spPageContextInfo.webServerRelativeUrl+"/";  
+	  if(typeof _spPageContextInfo  !=='undefined'){
+		  //preference for the SharePoint site, if hosted inside a webpart
+			return _spPageContextInfo.webServerRelativeUrl+"/";  
+	  }else{
+			return this.InternalGetUrlKeyValue("JUrl", null);
+	  }
   }
+  
+  InternalGetUrlKeyValue(d:string,a:string):string{
+	  let c="";
+	  if(a==null){
+		  a=window.location.href+""
+	  }
+	  let b=a.indexOf("#");
+	  if(b>=0){
+		  a=a.substr(0,b);
+	  }
+	  b=a.indexOf("&"+d+"=");
+	  if(b==-1){
+		  b=a.indexOf("?"+d+"=");
+	  }
+	  if(b!=-1){
+		  let ndx2=a.indexOf("&",b+1);
+		  if(ndx2==-1){
+			  ndx2=a.length;
+		  }
+		  c=a.substring(b+d.length+2,ndx2)
+		}
+		return c;
+	}
 }

@@ -16,9 +16,11 @@ constructor(rawResponse?:any){
 		return ["title", "jobTitle",  "name", "email" ]
 	}
 	
+	static urlOfSubsite = "/";
+	
 	///user profile service always run on root web .
 	getSiteUrl():string{
-		return '/';
+		return UserInfoListEntry.urlOfSubsite;
 	}
 	getListName():string{
 		return 'UserInfo';
